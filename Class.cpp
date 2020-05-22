@@ -5,7 +5,7 @@ TComplex::TComplex(){
 	im = 0;
 }
 
-TComplex::TComplex(double re_) {
+TComplex::TComplex(double re_){
 	re = re_;
 	im = 0;
 }
@@ -44,7 +44,7 @@ TComplex TComplex::pwr(int n){
 	TComplex res = *this;
 	if (n != 0){
 		int i = 0;
-		for (i = 0; i < abs(n) - 1; i++) {
+		for (i = 0; i < abs(n) - 1; i++){
 			res = res * *this;
 		}
 		if (n < 0) {
@@ -54,7 +54,7 @@ TComplex TComplex::pwr(int n){
 	return res;
 }
 
-TComplex TComplex::pwr(double n) {
+TComplex TComplex::pwr(double n){
 	TComplex res;
 	double phi, z = mod();
 	phi = atan(im / re) + acos(-1.0) * abs(((re / (abs(re)) - 1) / 2));
