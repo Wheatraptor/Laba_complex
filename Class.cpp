@@ -5,14 +5,14 @@ TComplex::TComplex(){
 	im = 0;
 }
 
+TComplex::TComplex(double re_) {
+	re = re_;
+	im = 0;
+}
+
 TComplex::TComplex(double re_, double im_){
 	re = re_;
 	im = im_;
-}
-
-TComplex::TComplex(double re_){
-	re = re_;
-	im = 0;
 }
 
 TComplex::TComplex(const TComplex& num){

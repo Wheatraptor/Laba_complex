@@ -6,8 +6,8 @@ class TComplex {
 	double re, im;
 public:
 	TComplex();
-	TComplex(double re_, double im_);
 	TComplex(double re_);
+	TComplex(double re_, double im_);
 	TComplex(const TComplex& num);
 
 	void redef(double re_);
