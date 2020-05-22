@@ -27,6 +27,6 @@ public:
 	TComplex& operator=(const TComplex& num);
 	bool operator==(const TComplex& num);
 
-	friend std::ostream& operator<<(std::ostream& out, const TComplex& c);
-	friend std::istream& operator>>(std::istream& in, TComplex& c);
+	friend ostream& operator<<(std::ostream& out, const TComplex& c);
+	friend istream& operator>>(std::istream& in, TComplex& c);
 };

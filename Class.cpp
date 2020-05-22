@@ -109,7 +109,7 @@ bool TComplex::operator==(const TComplex& num){
 	return (re == num.re) && (im == num.im);
 }
 
-std::ostream& operator<<(std::ostream& out, const TComplex& num){
+ostream& operator<<(std::ostream& out, const TComplex& num){
 	if (num.im >= 0)
 		out << num.re << '+' << num.im << 'i';
 	else
@@ -117,7 +117,7 @@ std::ostream& operator<<(std::ostream& out, const TComplex& num){
 	return out;
 }
 
-std::istream& operator>>(std::istream& in, TComplex& num){
+istream& operator>>(std::istream& in, TComplex& num){
 	in >> num.re >> num.im;
 	return in;
 }
